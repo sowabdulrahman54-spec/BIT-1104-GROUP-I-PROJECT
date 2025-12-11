@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sierra Leone Football - Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .contact-banner {
+            position: relative;
+            height: 300px;
+            overflow: hidden;
+            border-radius: var(--radius);
+            margin-bottom: 2rem;
+        }
+        
+        .contact-banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .contact-info-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: var(--radius);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .contact-info-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .contact-info-item i {
+            width: 40px;
+            height: 40px;
+            background: var(--sl-green);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--sl-white);
+        }
+        
+        .map-placeholder {
+            width: 100%;
+            height: 300px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: var(--radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--sl-white);
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html" class="logo-text">Sierra Leone <span>Football</span></a>
+            </div>
+            
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="players.html">Players</a></li>
+                <li><a href="matches.html">Matches</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-container fade-in">
+                <h2 class="section-title">Contact Us</h2>
+                
+                <div class="contact-banner img-hover">
+                    <img src="staduim.png" 
+                         alt="Sierra Leone Football Stadium" 
+                         class="img-responsive">
+                </div>
+                
+                <div class="grid grid-2">
+                    <div>
+                        <h3>Send us a Message</h3>
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="fullName">Full Name *</label>
+                                <input type="text" id="fullName" name="fullName" class="form-control" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" class="form-control" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <input type="text" id="subject" name="subject" class="form-control" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn">Send Message</button>
+                        </form>
+                    </div>
+                    
+                    <div>
+                        <h3>Contact Information</h3>
+                        <div class="contact-info-card">
+                            <div class="contact-info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h4>Stadium Address</h4>
+                                    <p>National Stadium<br>Siaka Stevens Street<br>Freetown, Sierra Leone</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-info-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h4>Phone Numbers</h4>
+                                    <p>Main Office: +232 76 123 456<br>Scouting: +232 77 987 654</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-info-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h4>Email Addresses</h4>
+                                    <p>General: info@sierraleonefootball.com<br>Players: players@sierraleonefootball.com<br>Media: media@sierraleonefootball.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-info-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <h4>Office Hours</h4>
+                                    <p>Monday - Friday: 8:00 AM - 6:00 PM<br>Saturday: 9:00 AM - 1:00 PM<br>Sunday: Closed</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="map-placeholder">
+                    <div class="text-center">
+                        <i class="fas fa-map-marked-alt" style="font-size: 3rem; margin-bottom: 1rem;"></i>
+                        <h3>Interactive Map</h3>
+                        <p>Location of Sierra Leone Football Headquarters</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Sierra Leone Football</h3>
+                    <p>Promoting football talent and passion across Sierra Leone since 1960.</p>
+                    <img src="flag.png" alt="Sierra Leone Flag" class="footer-flag">
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="players.html"><i class="fas fa-users"></i> Players</a></li>
+                        <li><a href="matches.html"><i class="fas fa-futbol"></i> Matches</a></li>
+                        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> National Stadium, Freetown</li>
+                        <li><i class="fas fa-phone"></i> +232 76 123 456</li>
+                        <li><i class="fas fa-envelope"></i> info@sierraleonefootball.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sierra Leone Football Agency. All Rights Reserved.</p>
+                <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i> Back to Top</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('fullName').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            
+            if(name && email && subject && message) {
+                alert('Thank you for your message! We will respond within 24-48 hours.');
+                this.reset();
+            } else {
+                alert('Please fill in all required fields.');
+            }
+        });
+    </script>
+</body>
+</html>

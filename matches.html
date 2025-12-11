@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sierra Leone Football - Matches</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .match-badge {
+            display: inline-block;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.8rem;
+            margin-right: 10px;
+        }
+        
+        .badge-win { background: var(--sl-green); color: var(--sl-white); }
+        .badge-loss { background: #dc3545; color: var(--sl-white); }
+        .badge-draw { background: #ffc107; color: var(--sl-dark); }
+        
+        .match-card {
+            position: relative;
+        }
+        
+        .match-date {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: var(--sl-green);
+            color: var(--sl-white);
+            padding: 5px 15px;
+            border-radius: var(--radius);
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html" class="logo-text">Sierra Leone <span>Football</span></a>
+            </div>
+            
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="players.html">Players</a></li>
+                <li><a href="matches.html" class="active">Matches</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="section" id="matches">
+        <div class="container">
+            <div class="section-container fade-in">
+                <h2 class="section-title">Upcoming Matches</h2>
+                
+                <div class="grid grid-2">
+                    <div class="card match-card">
+                        <div class="match-date">
+                            <span>15 JUL</span>
+                        </div>
+                        <div class="img-hover">
+                            <img src="sss.png" 
+                                 alt="East End Lions vs Bo Rangers" 
+                                 class="img-responsive">
+                        </div>
+                        <div class="match-info">
+                            <h3>East End Lions vs Bo Rangers</h3>
+                            <div class="match-details">
+                                <p><i class="fas fa-map-marker-alt"></i> National Stadium, Freetown</p>
+                                <p><i class="fas fa-clock"></i> 16:00 GMT</p>
+                                <p><i class="fas fa-trophy"></i> Sierra Leone Premier League</p>
+                            </div>
+                            <div class="match-badges">
+                                <span class="match-badge badge-win">W</span>
+                                <span class="match-badge badge-loss">L</span>
+                                <span class="match-badge badge-draw">D</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card match-card">
+                        <div class="match-date">
+                            <span>22 JUL</span>
+                        </div>
+                        <div class="img-hover">
+                            <img src="Mighty Blackpool vs Kamboi Eagles" 
+                                 alt="Mighty Blackpool vs Kamboi Eagles" 
+                                 class="img-responsive">
+                        </div>
+                        <div class="match-info">
+                            <h3>Mighty Blackpool vs Kamboi Eagles</h3>
+                            <div class="match-details">
+                                <p><i class="fas fa-map-marker-alt"></i> Approved School Ground</p>
+                                <p><i class="fas fa-clock"></i> 15:30 GMT</p>
+                                <p><i class="fas fa-trophy"></i> Sierra Leone Premier League</p>
+                            </div>
+                            <div class="match-badges">
+                                <span class="match-badge badge-win">W</span>
+                                <span class="match-badge badge-draw">D</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card match-card">
+                        <div class="match-date">
+                            <span>29 JUL</span>
+                        </div>
+                        <div class="img-hover">
+                            <img src="sl vs ghana.png" 
+                                 alt="Sierra Leone vs Ghana" 
+                                 class="img-responsive">
+                        </div>
+                        <div class="match-info">
+                            <h3>Sierra Leone vs Ghana</h3>
+                            <div class="match-details">
+                                <p><i class="fas fa-map-marker-alt"></i> Accra Sports Stadium</p>
+                                <p><i class="fas fa-clock"></i> 18:00 GMT</p>
+                                <p><i class="fas fa-flag"></i> AFCON Qualifier</p>
+                            </div>
+                            <div class="match-badges">
+                                <span class="match-badge badge-loss">L</span>
+                                <span class="match-badge badge-draw">D</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card match-card">
+                        <div class="match-date">
+                            <span>05 AUG</span>
+                        </div>
+                        <div class="img-hover">
+                            <img src="" 
+                                 alt="FC Johansen vs Diamond Stars" 
+                                 class="img-responsive">
+                        </div>
+                        <div class="match-info">
+                            <h3>FC Johansen vs Diamond Stars</h3>
+                            <div class="match-details">
+                                <p><i class="fas fa-map-marker-alt"></i> Siaka Stevens Stadium</p>
+                                <p><i class="fas fa-clock"></i> 17:00 GMT</p>
+                                <p><i class="fas fa-trophy"></i> Sierra Leone Premier League</p>
+                            </div>
+                            <div class="match-badges">
+                                <span class="match-badge badge-win">W</span>
+                                <span class="match-badge badge-win">W</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="match-calendar mt-40">
+                    <h3>Match Calendar</h3>
+                    <div class="calendar">
+                        <div class="calendar-header">
+                            <button class="btn btn-secondary"><i class="fas fa-chevron-left"></i></button>
+                            <h4>July 2025</h4>
+                            <button class="btn btn-secondary"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                        <div class="calendar-grid">
+                            <div class="calendar-day">Sun</div>
+                            <div class="calendar-day">Mon</div>
+                            <div class="calendar-day">Tue</div>
+                            <div class="calendar-day">Wed</div>
+                            <div class="calendar-day">Thu</div>
+                            <div class="calendar-day">Fri</div>
+                            <div class="calendar-day">Sat</div>
+                            
+                            <!-- Calendar dates would be generated dynamically -->
+                            <div class="calendar-date">27</div>
+                            <div class="calendar-date">28</div>
+                            <div class="calendar-date">29</div>
+                            <div class="calendar-date">30</div>
+                            <div class="calendar-date">1</div>
+                            <div class="calendar-date">2</div>
+                            <div class="calendar-date">3</div>
+                            <div class="calendar-date">4</div>
+                            <div class="calendar-date">5</div>
+                            <div class="calendar-date">6</div>
+                            <div class="calendar-date">7</div>
+                            <div class="calendar-date">8</div>
+                            <div class="calendar-date">9</div>
+                            <div class="calendar-date">10</div>
+                            <div class="calendar-date match-day">11</div>
+                            <div class="calendar-date">12</div>
+                            <div class="calendar-date">13</div>
+                            <div class="calendar-date">14</div>
+                            <div class="calendar-date match-day">15</div>
+                            <div class="calendar-date">16</div>
+                            <div class="calendar-date">17</div>
+                            <div class="calendar-date">18</div>
+                            <div class="calendar-date">19</div>
+                            <div class="calendar-date">20</div>
+                            <div class="calendar-date">21</div>
+                            <div class="calendar-date match-day">22</div>
+                            <div class="calendar-date">23</div>
+                            <div class="calendar-date">24</div>
+                            <div class="calendar-date">25</div>
+                            <div class="calendar-date">26</div>
+                            <div class="calendar-date">27</div>
+                            <div class="calendar-date">28</div>
+                            <div class="calendar-date match-day">29</div>
+                            <div class="calendar-date">30</div>
+                            <div class="calendar-date">31</div>
+                            <div class="calendar-date">1</div>
+                            <div class="calendar-date">2</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Sierra Leone Football</h3>
+                    <p>Promoting football talent and passion across Sierra Leone since 1960.</p>
+                    <img src="flag.png" alt="Sierra Leone Flag" class="footer-flag">
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="players.html"><i class="fas fa-users"></i> Players</a></li>
+                        <li><a href="matches.html"><i class="fas fa-futbol"></i> Matches</a></li>
+                        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> National Stadium, Freetown</li>
+                        <li><i class="fas fa-phone"></i> +232 76 123 456</li>
+                        <li><i class="fas fa-envelope"></i> info@sierraleonefootball.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sierra Leone Football Agency. All Rights Reserved.</p>
+                <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i> Back to Top</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+
+        const calendarDates = document.querySelectorAll('.calendar-date');
+        calendarDates.forEach(date => {
+            if(date.classList.contains('match-day')) {
+                date.addEventListener('click', function() {
+                    alert('Match day selected! This would show match details.');
+                });
+            }
+        });
+    </script>
+</body>
+</html>

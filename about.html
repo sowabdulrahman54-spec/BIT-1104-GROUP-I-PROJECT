@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sierra Leone Football - About Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .achievement-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(68, 180, 73, 0.1);
+            border: 2px solid var(--sl-green);
+            border-radius: 50px;
+            padding: 10px 20px;
+            margin: 5px;
+        }
+        
+        .achievement-badge i {
+            color: var(--sl-green);
+        }
+        
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 4px;
+            height: 100%;
+            background: var(--sl-green);
+        }
+        
+        .timeline-item {
+            position: relative;
+            margin-bottom: 40px;
+            width: 50%;
+            padding: 20px;
+        }
+        
+        .timeline-item:nth-child(odd) {
+            left: 0;
+            text-align: right;
+        }
+        
+        .timeline-item:nth-child(even) {
+            left: 50%;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            width: 20px;
+            height: 20px;
+            background: var(--sl-green);
+            border-radius: 50%;
+        }
+        
+        .timeline-item:nth-child(odd)::before {
+            right: -10px;
+        }
+        
+        .timeline-item:nth-child(even)::before {
+            left: -10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html" class="logo-text">Sierra Leone <span>Football</span></a>
+            </div>
+            
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="players.html">Players</a></li>
+                <li><a href="matches.html">Matches</a></li>
+                <li><a href="about.html" class="active">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-container fade-in">
+                <h2 class="section-title">About the Sierra Leone Football Agency</h2>
+                
+                <div class="grid grid-2 mb-40">
+                    <div class="slide-in">
+                        <h3>Our Mission</h3>
+                        <p>To develop, promote, and advance football in Sierra Leone by identifying, nurturing, and showcasing local talent to the world stage. We are committed to creating opportunities for Sierra Leonean footballers to excel both nationally and internationally.</p>
+                        
+                        <h3>Our Vision</h3>
+                        <p>To establish Sierra Leone as a powerhouse of football talent in Africa and beyond, recognized for producing world-class players who excel in top leagues worldwide.</p>
+                        
+                        <h3>Our Values</h3>
+                        <ul>
+                            <li>Integrity and Fair Play</li>
+                            <li>Excellence in Performance</li>
+                            <li>Community Development</li>
+                            <li>Youth Empowerment</li>
+                            <li>National Pride</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="img-hover slide-in">
+                        <img src="team.png" 
+                             alt="Sierra Leone Football Team" 
+                             class="img-responsive">
+                    </div>
+                </div>
+                
+                <div class="timeline-section">
+                    <h3 class="text-center mb-40">Our Journey</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <h4>1960</h4>
+                            <p>Sierra Leone Football Association established</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>1994</h4>
+                            <p>First qualification for Africa Cup of Nations</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>2010</h4>
+                            <p>Launch of national youth development program</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>2023</h4>
+                            <p>Modern football infrastructure development</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="achievements-section mt-40">
+                    <h3 class="text-center mb-40">Our Achievements</h3>
+                    <div class="achievements-grid">
+                        <div class="achievement-badge">
+                            <i class="fas fa-trophy"></i>
+                            <span>3 National League Titles</span>
+                        </div>
+                        <div class="achievement-badge">
+                            <i class="fas fa-users"></i>
+                            <span>50+ Professional Players</span>
+                        </div>
+                        <div class="achievement-badge">
+                            <i class="fas fa-globe-africa"></i>
+                            <span>10 International Transfers</span>
+                        </div>
+                        <div class="achievement-badge">
+                            <i class="fas fa-medal"></i>
+                            <span>2 African Cup Qualifications</span>
+                        </div>
+                        <div class="achievement-badge">
+                            <i class="fas fa-star"></i>
+                            <span>15 Youth Academy Graduates</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Sierra Leone Football</h3>
+                    <p>Promoting football talent and passion across Sierra Leone since 1960.</p>
+                    <img src="flag.png" alt="Sierra Leone Flag" class="footer-flag">
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="players.html"><i class="fas fa-users"></i> Players</a></li>
+                        <li><a href="matches.html"><i class="fas fa-futbol"></i> Matches</a></li>
+                        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> National Stadium, Freetown</li>
+                        <li><i class="fas fa-phone"></i> +232 76 123 456</li>
+                        <li><i class="fas fa-envelope"></i> info@sierraleonefootball.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sierra Leone Football Agency. All Rights Reserved.</p>
+                <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i> Back to Top</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

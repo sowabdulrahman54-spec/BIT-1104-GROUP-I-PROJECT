@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sierra Leone Football - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html" class="logo-text">Sierra Leone <span>Football</span></a>
+            </div>
+            
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="players.html">Players</a></li>
+                <li><a href="matches.html">Matches</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="section" id="home-hero">
+        <div class="container">
+            <div class="section-container fade-in">
+                <div class="grid grid-2">
+                    <div class="slide-in">
+                        <h1>Welcome to Sierra Leone Football</h1>
+                        <p>Discover the passion, talent, and spirit of Sierra Leonean football. We're dedicated to nurturing talent, promoting the beautiful game, and bringing Sierra Leone's football community together.</p>
+                        <a href="#features" class="btn">Explore Our Players</a>
+                    </div>
+                    <div class="img-hover">
+                        <img src="staduim.png" 
+                             alt="Sierra Leone Football Stadium" 
+                             class="img-responsive">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="features">
+        <div class="container">
+            <div class="section-container fade-in">
+                <h2 class="section-title">What We Offer</h2>
+                <div class="grid grid-3">
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-newspaper"></i>
+                        </div>
+                        <h3>Latest News</h3>
+                        <p>Stay updated with the latest football news, match results, and developments in Sierra Leone football.</p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Top Players</h3>
+                        <p>Discover talented players from Sierra Leone who are making waves both locally and internationally.</p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-futbol"></i>
+                        </div>
+                        <h3>Upcoming Matches</h3>
+                        <p>Never miss a game with our comprehensive match schedule featuring local and international fixtures.</p>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-40">
+                    <a href="players.html" class="btn">Explore Players</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Sierra Leone Football</h3>
+                    <p>Promoting football talent and passion across Sierra Leone since 1960.</p>
+                    <img src="flag.png" alt="Sierra Leone Flag" class="footer-flag">
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="players.html"><i class="fas fa-users"></i> Players</a></li>
+                        <li><a href="matches.html"><i class="fas fa-futbol"></i> Matches</a></li>
+                        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> National Stadium, Freetown</li>
+                        <li><i class="fas fa-phone"></i> +232 76 123 456</li>
+                        <li><i class="fas fa-envelope"></i> info@sierraleonefootball.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sierra Leone Football Agency. All Rights Reserved.</p>
+                <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i> Back to Top</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
